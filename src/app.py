@@ -63,7 +63,7 @@ def update_user(id):
 @app.errorhandler(404)
 def not_found(error=None):
     response = jsonify(
-        {'message':'resource not found: '+ request.url, 'status':404}
+        {'message':'resource not found: '+ request.url, ' status ':404}
     )
     response.status_code = 404
     return response
